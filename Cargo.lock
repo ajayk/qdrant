@@ -6209,11 +6209,11 @@ checksum = "55937e1799185b12863d447f42597ed69d9928686b8d88a1df17376a097d8369"
 [[package]]
 name = "tar"
 version = "0.4.41"
-source = "registry+https://github.com/rust-lang/crates.io-index"
-checksum = "cb797dad5fb5b76fcf519e702f4a589483b5ef06567f160c392832c1f5e44909"
+source = "git+https://github.com/qdrant/tar-rs?branch=sparse-builder#ef748accc67ab46fd3cbe92235865863df9ce9d5"
 dependencies = [
  "filetime",
  "libc",
+ "nix 0.29.0",
  "xattr",
 ]
 
