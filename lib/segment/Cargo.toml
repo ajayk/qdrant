@@ -105,10 +105,10 @@ procfs = { version = "0.16", default-features = false }
 io-uring = "0.6.4"
 
 [target.'cfg(all(not(target_env = "msvc"), any(target_arch = "x86_64", target_arch = "aarch64")))'.dependencies]
-rocksdb = { version = "0.22.0", default-features = false, features = ["snappy", "lz4", "jemalloc"] }
+rocksdb = { version = "0.30.0", default-features = false, features = ["snappy", "lz4", "jemalloc"], package = "rust-rocksdb" }
 
 [target.'cfg(target_env = "msvc")'.dependencies]
-rocksdb = { version = "0.22.0", default-features = false, features = ["snappy", "lz4"] }
+rocksdb = { version = "0.30.0", default-features = false, features = ["snappy", "lz4"], package = "rust-rocksdb" }
 
 [[bench]]
 name = "vector_search"
